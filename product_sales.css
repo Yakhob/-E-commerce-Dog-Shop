@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Back to Products Button */
+.back-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Stock Quantity */
+.stock-quantity {
+    position: absolute;
+    top: 40px; /* Adjusts to be below the button */
+    right: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fcfcfe;
+    margin: 0;
+    background-color: #474a4e;
+    padding: 10px 20px;
+
+}
+
+/* Container Styles */
+.container {
+    max-width: 900px;
+    margin: 80px auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Heading Styles */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Table Styles */
+.sales-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+.sales-table thead {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.sales-table th,
+.sales-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.sales-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.sales-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.sales-table th {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sales-table td {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .stock-quantity {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .sales-table th,
+    .sales-table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

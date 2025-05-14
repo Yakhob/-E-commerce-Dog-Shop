@@ -1,0 +1,73 @@
+/* General page styling */
+body {
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fb;
+    color: #333;
+}
+
+/* Header styling */
+/* Header styling */
+header {
+    background-color: #0a1214;
+    color: white;
+    padding: 20px 20px; /* Reduced padding */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo styling */
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em; /* You can adjust this size as well */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: auto;
+    display: flex;
+    gap: 15px; /* Reduced gap between links */
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: gray;
+}

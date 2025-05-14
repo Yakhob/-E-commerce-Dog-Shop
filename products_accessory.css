@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    overflow-y: auto; /* Ensures the page is scrollable */
+
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space between heading and button */
+    margin-bottom: 0px;
+}
+
+.header h2 {
+    margin-left: 20px; /* Adjust left margin for the heading */
+    flex-grow: 1; /* Allow the heading to take up available space */
+    text-align: center; /* Center align the heading text */
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.header .button {
+    margin-right: 0px; /* Adjust right margin for the button */
+    margin-top: -70px;
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.header .button:hover {
+    background-color: #bbb;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: calc(100% - 120px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    width: 100px;
+    padding: 10px;
+    background-color: grey;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: darkgrey;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    height: 300px; /* Adjust the total height of the card */
+}
+
+.product-card img {
+    width: 100%;
+    height: 70%; /* Reduce the height of the image */
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 0px; /* Adjust padding for smaller content */
+    height: 30%; /* Reduce the content section height */
+}
+
+.product-info h3 {
+    margin: -3px 10px; /* Reduce margin for compact appearance */
+    font-size: 15px; /* Smaller font size */
+}
+
+.product-info p {
+    margin: 5px 10px;
+    font-size: 14px; /* Adjust font size */
+}
+
+.product-info .button {
+    display: inline-block;
+    padding: 6px 123.7px; /* Reduce button padding */
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0px;
+    font-size: 15px; /* Adjust font size */
+}
+
+.product-info .button:hover {
+    background-color: #0056b3;
+}
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination-link {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: black;
+}
+
+.pagination-link.active {
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}
+
+.pagination-link:hover {
+    background-color: lightgrey;
+}
+
+.pagination-link.active:hover {
+    background-color: grey;
+}

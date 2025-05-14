@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    overflow-y: auto; /* Ensures the page is scrollable */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: calc(100% - 20px);
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Service Ticket Styles */
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+}
+
+.service-image {
+    flex-shrink: 0;
+    width: 30%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.service-info {
+    flex-grow: 1;
+}
+
+.service-info h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.service-info p {
+    margin: 5px 0;
+}
+
+.service-info strong {
+    font-weight: bold;
+}
+
+.button {
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

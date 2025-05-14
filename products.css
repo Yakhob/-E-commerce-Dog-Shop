@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    overflow-y: scroll; /* Ensure the page can scroll */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space between heading and button */
+    margin-bottom: 0px;
+}
+
+.header h2 {
+    margin-left: 20px; /* Adjust left margin for the heading */
+    flex-grow: 1; /* Allow the heading to take up available space */
+    text-align: center; /* Center align the heading text */
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.header .button {
+    margin-right: 0px; /* Adjust right margin for the button */
+    margin-top: -70px;
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+.header .button:hover {
+    background-color: #bbb;
+}
+
+/* Search Bar Styles */
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: calc(100% - 20px);
+}
+
+.search-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Product Grid Styles */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    height: 300px; /* Adjust the total height of the card */
+}
+
+.product img {
+    width: 100%;
+    height: 70%; /* Reduce the height of the image */
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 0px; /* Adjust padding for smaller content */
+    height: 30%; /* Reduce the content section height */
+}
+
+.product-info h3 {
+    margin: -3px 10px; /* Reduce margin for compact appearance */
+    font-size: 14px; /* Smaller font size */
+}
+
+.product-info p {
+    margin: 5px 10px;
+    font-size: 14px; /* Adjust font size */
+}
+
+.product-info .button {
+    display: inline-block;
+    padding: 6px 105.4px; /* Reduce button padding */
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0px;
+    font-size: 14px; /* Adjust font size */
+}
+
+.product-info .button:hover {
+    background-color: #0056b3;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #0056b3;
+}
+
+.pagination a.active {
+    background-color: #0056b3;
+    pointer-events: none;
+}

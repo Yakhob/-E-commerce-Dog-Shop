@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    overflow-y: auto; /* Ensures the page is scrollable */
+}
+
+
+.profile-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* User Details Section */
+.profile-details {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.profile-details p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.profile-details .button {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 8px 15px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.profile-details .message-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+/* Section Navigation Buttons */
+.section-navigation {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.section-navigation .button {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 5px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.section-navigation .button:hover {
+    background: #0056b3;
+}
+
+/* Cart Section */
+.cart-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cart-item {
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    height: 300px; /* Adjust the total height of the card */
+}
+
+.cart-item img {
+    width: 100%;
+    height: 65%; /* Reduce the height of the image */
+    object-fit: cover;
+}
+
+.cart-item-details {
+    padding: 0px; /* Adjust padding for smaller content */
+    height: 35%; /* Reduce the content section height */
+}
+
+.cart-item-details p {
+    margin: 5px 10px;
+    font-size: 14px; /* Adjust font size */
+}
+
+.cart-item-details .button {
+    display: inline-block;
+    padding: 6px 115px; /* Reduce button padding */
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0px;
+    font-size: 14px; /* Adjust font size */
+}
+.cart-item-details .button:hover{
+    background-color: #0056b3;
+}
+
+/* Purchased Dogs Section */
+.dog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.dog-item {
+    display: flex;
+    width: calc(49% - 20px);
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 8px;
+    padding: 0px;
+    max-height: 300px;
+}
+
+.dog-item img {
+    height: 100%;
+    max-width: 50%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.dog-item div {
+    padding: 10px;
+    width: 50%;
+}
+
+.dog-item p {
+    margin: 5px 0;
+}
+
+/* Bookings Section */
+.bookings-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.bookings-section th, .bookings-section td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.bookings-section th {
+    background: #007bff;
+    color: #fff;
+}
+
+.bookings-section td {
+    background: #f9f9f9;
+}
+
+/* Purchased Products Section */.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-item {
+    display: flex;
+    width: calc(49% - 20px);
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 8px;
+    padding: 0; /* Remove extra padding */
+    height: 300px; /* Set a fixed height for all product items */
+}
+
+.product-item img {
+    width: 50%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.product-item div {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+.product-item p {
+    margin: 5px 0;
+}

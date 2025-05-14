@@ -1,0 +1,101 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 20%;
+    height: 100%;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 20px;
+    color: white;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.logout-btn {
+    padding: 10px 15px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #e60000;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Main content */
+.main-content {
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+.main-content.shift {
+    margin-left: 20%;
+}
+
+/* Hamburger icon */
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1001;
+}
+
+.hamburger:hover {
+    color: #007bff;
+}
+
+/* Hide hamburger when sidebar is active */
+.sidebar.active ~ .main-content .hamburger {
+    display: none;
+}
